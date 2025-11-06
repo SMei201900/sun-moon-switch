@@ -1,10 +1,30 @@
-
-
-#moveToTheMiddle {
-    display: flex;
-    justify-content: center; /*moves it to the center but still at the top*/
+body {
+    height: 100vh;
 }
 
+#moveToTheMiddle {
+  position: fixed; /*absolute also centered it*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+position: fixed means the element is fixed relative to the vh, not to the parent (ex: body)
+It will also NOT move despite scrolling 
+
+top: 50% means 50% from the top of the vh
+left: 50% means 50% from the left of the vh 
+THUS 50% from the top-left corner (REMINDER: item's starting position was top-left corner of the webpage)
+--This has moved the btn to somewhere in the middle BUT not exactly the middle 
+
+transform: translate(-50%, -50%);
+It shifts the element back up AND left by half of its own w&h 
+It corrects the offset THUS allowing a perfect center alignment  
+The offset was b/c what we actually did with top&left:50% was we placed 
+    the container's top-left corner in the middle of the page 
+    BUT not the middle of the container into the middle of the page 
+*/
 
 #theBtn { 
     background-color: yellowgreen; /*placeholder*/
@@ -13,10 +33,6 @@
     border: none;
     border-radius: 70px; 
 }
-
-
-
-
 
 
 

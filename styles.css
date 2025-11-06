@@ -1,0 +1,32 @@
+
+
+#moveToTheMiddle {
+    display: flex;
+    justify-content: center; /*moves it to the center but still at the top*/
+}
+
+
+#theBtn { 
+    background-color: yellowgreen; /*placeholder*/
+    padding: 50px;
+    font-size: 50px;
+    border: none;
+    border-radius: 70px; 
+}
+
+
+
+
+
+
+
+
+/*
+justify-content align flex items along the main axis
+    If flex-direction is ROW, the main axis is horizontal
+    If flex-direction is COLUMN, the main axis is vertical 
+
+align-items refers to the CROSS axis 
+    If flex-direction is ROW, the main axis is vertical 
+    If flex-direction is COLUMN, the main axis is horizontal 
+*/
